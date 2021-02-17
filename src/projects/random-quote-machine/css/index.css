@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap');
+
+.quote-machine {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(84, 64, 135);
+  background: linear-gradient(
+    238deg,
+    rgba(84, 64, 135, 1) 0%,
+    rgba(69, 65, 189, 1) 78%,
+    rgba(60, 66, 219, 0.8239670868347339) 100%
+  );
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
+  padding: 10px;
+  min-height: 125px;
+}
+
+.author {
+  font-size: 10px;
+  margin-left: 120px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.twit-quote {
+  margin-left: 20px;
+}
+
+.new-quote {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  line-height: 20px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 10px;
+  color: rgb(84, 64, 135);
+  margin-top: 20px;
+}
+
+.new-quote:hover {
+  background-color: rgb(206, 191, 243);
+  transition: 0.4s ease;
+}
+
+.tweet-quote {
+  display: block;
+  margin-top: 20px;
+  fill: #fff;
+}
+
+.tweet-quote:hover {
+  fill: rgb(206, 191, 243);
+}
