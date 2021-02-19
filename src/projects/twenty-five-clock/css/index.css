@@ -33,37 +33,31 @@
   cursor: pointer;
   border: none;
   outline: none;
+  background: none;
 }
 
+.ctrl-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .ctrl-btn {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: rgb(250, 157, 36);
+  color: #fff;
 }
 
 .ctrl-btn:hover {
-  background-color: rgb(248, 181, 93);
+  color: rgb(217, 255, 0);
 }
 
 .btn-start,
 .btn-reset {
-  width: 100px;
-  padding: 20px 0;
+  color: rgb(217, 255, 0);
   margin: 10px;
 }
 
-.btn-start:hover {
-  background-color: rgb(248, 181, 93);
-}
-.btn-start {
-  background-color: rgb(250, 157, 36);
-}
-.btn-reset {
-  background-color: #e84040;
-}
+.btn-start:hover,
 .btn-reset:hover {
-  background-color: #e76161;
+  color: #fff;
 }
 
 #break-label,
@@ -82,8 +76,8 @@
 #break-length,
 #session-length {
   display: inline-block;
-  padding: 5px;
-  font-size: 16px;
+  padding: 0 5px;
+  font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  color: rgb(217, 255, 0);
 }

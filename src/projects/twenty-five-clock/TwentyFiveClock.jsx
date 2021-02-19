@@ -93,40 +93,55 @@ const TwentyFiveClock = () => {
       <div className="clock-container">
         <div className="left-col">
           <div id="break-label">Break length</div>
-          <button
-            id="break-decrement"
-            className="btn ctrl-btn"
-            disabled={isRun}
-            onClick={handleBreakDec}>
-            -
-          </button>
-          <div id="break-length">{breakLength}</div>
-          <button
-            id="break-increment"
-            className="btn ctrl-btn"
-            disabled={isRun}
-            onClick={handleBreakInc}>
-            +
-          </button>
+          <div className="ctrl-panel">
+            <button
+              id="break-decrement"
+              className="btn ctrl-btn"
+              disabled={isRun}
+              onClick={handleBreakDec}>
+              <span class="material-icons" style={{ fontSize: '36px' }}>
+                arrow_circle_down
+              </span>
+            </button>
+            <div id="break-length">{breakLength}</div>
+            <button
+              id="break-increment"
+              className="btn ctrl-btn"
+              disabled={isRun}
+              onClick={handleBreakInc}>
+              {' '}
+              <span class="material-icons" style={{ fontSize: '36px' }}>
+                arrow_circle_up
+              </span>
+            </button>
+          </div>
         </div>
         <div className="right-col">
           <div id="session-label">Session-length</div>
-          <button
-            id="session-decrement"
-            className="btn ctrl-btn"
-            disabled={isRun}
-            onClick={handleSessionDec}>
-            -
-          </button>
-          <div id="session-length">{sessionLength}</div>
-          <button
-            id="session-increment"
-            className="btn ctrl-btn"
-            disabled={isRun}
-            onClick={handleSessionInc}>
-            +
-          </button>
+          <div className="ctrl-panel">
+            <button
+              id="session-decrement"
+              className="btn ctrl-btn"
+              disabled={isRun}
+              onClick={handleSessionDec}>
+              {' '}
+              <span class="material-icons" style={{ fontSize: '36px' }}>
+                arrow_circle_down
+              </span>
+            </button>
+            <div id="session-length">{sessionLength}</div>
+            <button
+              id="session-increment"
+              className="btn ctrl-btn"
+              disabled={isRun}
+              onClick={handleSessionInc}>
+              <span class="material-icons" style={{ fontSize: '36px' }}>
+                arrow_circle_up
+              </span>
+            </button>
+          </div>
         </div>
+
         <div className="bottom">
           <div className="session" style={{ display: 'block' }}>
             <div id="timer-label" style={{ display: 'block' }}>
@@ -136,10 +151,14 @@ const TwentyFiveClock = () => {
           </div>
           <div>
             <button id="start_stop" className="btn btn-start" onClick={handleStartStop}>
-              Play/Pause
+              <span class="material-icons" style={{ fontSize: '36px' }}>
+                not_started
+              </span>
             </button>
             <button id="reset" className="btn btn-reset" onClick={handleReset}>
-              Reset
+              <span class="material-icons" style={{ fontSize: '36px' }}>
+                replay
+              </span>
             </button>
           </div>
         </div>

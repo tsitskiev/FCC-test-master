@@ -7,10 +7,10 @@ const NavBar = () => {
       <nav role="navigation">
         <ul>
           <li>
-            <NavLink to="/MarkdownPreviewer">MarkdownPreviewer</NavLink>
+            <NavLink to="/MarkdownPreviewer">Markdown-Previewer</NavLink>
           </li>
           <li>
-            <NavLink to="/DrumMachine">DrumMachine</NavLink>
+            <NavLink to="/DrumMachine">Drum-Machine</NavLink>
           </li>
           <li>
             <NavLink to="/Calculator">Calculator</NavLink>
@@ -19,7 +19,7 @@ const NavBar = () => {
             <NavLink to="/25plusclock">25+5 Clock</NavLink>
           </li>
           <li>
-            <NavLink to="/RandomQuoteMachine">QuoteMachine</NavLink>
+            <NavLink to="/RandomQuoteMachine">Quote-Machine</NavLink>
           </li>
         </ul>
       </nav>

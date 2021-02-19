@@ -2,7 +2,7 @@
 @import './projects/calculator/css/index.css';
 @import './projects/twenty-five-clock/css/index.css';
 @import './projects/random-quote-machine/css/index.css';
-@import './projects/markdown-previewer/css/index.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
 
 * {
   margin: 0px;
@@ -10,6 +10,7 @@
 }
 
 .main-nav {
+  position: relative;
   height: 80px;
   width: 100vw;
   background-color: #888;
@@ -17,6 +18,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-nav ul {
@@ -47,4 +50,8 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(175, 175, 175);
+}
+
+#preview li {
+  margin-left: 40px;
 }
